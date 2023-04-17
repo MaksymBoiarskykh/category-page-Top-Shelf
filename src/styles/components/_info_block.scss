@@ -1,0 +1,17 @@
+.info_block {
+  .container {
+    padding: 40px 0 0;
+  }
+
+  &__caption {
+    color: #17af26;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    color: #717378;
+    padding: 20px;
+    border: 1px dashed #9747ff;
+    border-radius: 5px;
+  }
+}

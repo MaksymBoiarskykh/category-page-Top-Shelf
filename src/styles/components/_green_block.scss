@@ -1,0 +1,61 @@
+.green_block {
+  background: #05422c;
+  border-radius: 24px;
+  position: absolute;
+  top: -208px;
+  left: 8.3%;
+  right: 8.3%;
+
+  .container {
+    padding: 64px 5.3%;
+  }
+
+  &__caption {
+    @include font_sample(600, 32px, calc(38 / 32));
+    letter-spacing: -1.5px;
+    max-width: 789px;
+    margin: 0;
+
+    @media (min-width: 768px) {
+      @include font_sample(600, 64px, calc(70 / 64));
+      letter-spacing: -4px;
+    }
+  }
+
+  &__info {
+    color: #c3d2cc;
+    font-weight: 400;
+    margin: 24px 0 32px;
+  }
+}
+
+.email_block {
+  border-top: 1px solid #346654;
+  padding: 32px 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  &__field {
+    width: 100%;
+    background: #05422c;
+    border: 1px solid #346654;
+    border-radius: 100px;
+    padding: 24px 44px;
+    margin: 0 0 32px;
+    color: inherit;
+    font: inherit;
+
+    @media (min-width: 768px) {
+      margin: 0 16px 0 0;
+    }
+  }
+
+  &__button {
+    display: block;
+    min-width: 205px;
+    @include font_sample(400, 16px, calc(24 / 16));
+    padding: 21px 44px;
+  }
+}

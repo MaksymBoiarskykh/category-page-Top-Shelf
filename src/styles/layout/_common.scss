@@ -1,0 +1,80 @@
+body {
+  font: 400 14px / calc(21 / 14) "Lexend", sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4.43%;
+  position: relative;
+
+  @media (min-width: 992px) {
+    .main_block > & {
+      display: grid;
+      grid-template-columns: 230px 1fr;
+      grid-gap: 0 2.2%;
+
+      .prime {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+
+      .sidebar {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .main_block > & {
+      grid-template-columns: 21% 1fr;
+    }
+  }
+}
+
+h2 {
+  @include font_sample(400, 24px, calc(36 / 24));
+  color: #1a1e26;
+  margin: 0;
+}
+
+h3 {
+  @include font_sample(500, 20px, calc(30 / 20));
+  color: #1a1e26;
+  margin: 0;
+}
+
+h4 {
+  @include font_sample(400, 18px, calc(27 / 18));
+  margin: 0;
+}
+
+p {
+  @include font_sample(400, 16px, calc(24 / 16));
+  margin: 0;
+}
+
+.green_btn {
+  border-radius: 100px;
+  color: #fff;
+  background: #17af26;
+  transition: all 0.3s;
+
+  &:hover {
+    background: #eb2606;
+
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}

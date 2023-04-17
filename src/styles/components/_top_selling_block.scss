@@ -1,0 +1,147 @@
+.top_selling_block {
+  background: #f2f6f4;
+
+  .container {
+    padding: 0;
+  }
+
+  @media (min-width: 768px) {
+    border-radius: 16px;
+    padding: 0 4.43%;
+  }
+
+  @media (min-width: 992px) {
+    margin: 0 64px 0 32px;
+
+    .container {
+      padding: 24px 32px;
+    }
+  }
+
+  &__caption {
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 5.5%;
+    overflow-x: scroll;
+
+    @media (min-width: 768px) {
+      overflow: visible;
+    }
+
+    @media (min-width: 768px) {
+      // grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__list,
+  &__caption {
+    padding: 0 15px;
+
+    @media (min-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  .card {
+    width: 283px;
+
+    @media (min-width: 768px) {
+      width: auto;
+    }
+  }
+}
+      // <!-- <div class="top_selling_block">
+      //           <div class="container">
+      //               <h2 class="top_selling_block__caption">Top Selling</h2>
+      //               <ul class="top_selling_block__list">
+      //                   <li>
+      //                       <div class="card">
+      //                           <div class="card__picture"><img src="images/prev_ui_1.png" alt="prev_ui_1"></div>
+      //                           <div class="card__info">
+      //                               <div class="card__form">FLOWER</div>
+      //                               <div class="card__product">2 Oz Deal Watermelon Zkittles + Purple Gushers</div>
+      //                               <div class="card__reviews">
+      //                                   <div class="mark"><span class="icon-star-full"></span> 4.6/5</div>
+      //                                   <div class="review">
+      //                                       <span>135</span>
+      //                                       <span>Reviews</span>
+      //                                   </div>
+      //                               </div>
+      //                               <div class="card__type">Sativa 100%</div>
+      //                               <div class="card__prise">
+      //                                       <div class="card__prise__number">$80.00</div>
+      //                                       <div class="card__prise__gram">/ gram</div>
+      //                                   </div>
+      //                                   <ul class="card__weight">
+      //                                       <li>28g</li>
+      //                                       <li>1/2lb</li>
+      //                                       <li>1/4lb</li>
+      //                                   </ul>
+      //                                   <a href="#" class="green_btn">Add to Cart</a>
+      //                               </div>
+      //                           </div>
+      //                   </li>
+      //                   <li>
+      //                       <div class="card">
+      //                           <div class="card__picture card__picture--rel">
+      //                               <div class="yellow_block">$60 ounce</div>
+      //                               <img src="images/prev_ui_2.png" alt="prev_ui_1">
+      //                           </div>
+      //                           <div class="card__info">
+      //                               <div class="card__form">FLOWER</div>
+      //                               <div class="card__product">2 Oz Deal Ahi Tuna + Master Tuna</div>
+      //                               <div class="card__reviews card__reviews--big_mg">
+      //                                   <div class="mark"><span class="icon-star-full"></span> 4.6/5</div>
+      //                                   <div class="review">
+      //                                       <span>135</span>
+      //                                       <span>Reviews</span>
+      //                                   </div>
+      //                               </div>
+
+      //                               <div class="card__prise card__prise--reverse card__prise--big_mg">
+      //                                   <div class="card__prise__number">$120.00</div>
+      //                                   <div class="card__prise__gram card__prise__gram--line">$200.00</div>
+      //                               </div>
+
+      //                               <a href="#" class="green_btn">Add to Cart</a>
+      //                           </div>
+      //                       </div>
+      //                   </li>
+      //                   <li>
+      //                       <div class="card">
+      //                           <div class="card__picture card__picture--rel">
+      //                               <div class="stock_block">Out Of Stock</div>
+      //                               <img src="images/prev_ui_3.png" alt="prev_ui_1">
+      //                           </div>
+      //                           <div class="card__info">
+      //                               <div class="card__form">CONCENTRATES</div>
+      //                               <div class="card__product">Mix And Match Shatter/Budder 28g (4 X 7G)</div>
+      //                               <div class="card__reviews">
+      //                                   <div class="mark"><span class="icon-star-full"></span> 4.6/5</div>
+      //                                   <div class="review">
+      //                                       <span>135</span>
+      //                                       <span>Reviews</span>
+      //                                   </div>
+      //                               </div>
+      //                               <div class="card__type">Indica 70%</div>
+      //                               <div class="card__prise card__prise--reverse">
+      //                                   <div class="card__prise__number">$120.00</div>
+      //                                   <div class="card__prise__gram card__prise__gram--line">$200.00</div>
+      //                               </div>
+      //                               <ul class="card__weight">
+      //                                   <li>28g</li>
+      //                                   <li>1/2lb</li>
+      //                                   <li>1/4lb</li>
+      //                               </ul>
+      //                               <a href="#" class="green_btn">Add to Cart</a>
+      //                           </div>
+      //                       </div>
+      //                   </li>
+      //               </ul>
+      //           </div>
+      //       </div> -->

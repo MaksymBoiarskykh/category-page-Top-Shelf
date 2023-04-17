@@ -1,0 +1,17 @@
+@mixin font_sample($my_weight, $my_size, $my_line-height) {
+  font-weight: $my_weight;
+  font-size: $my_size;
+  line-height: $my_line-height;
+}
+
+@mixin disappearance() {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@mixin appearance() {
+  position: static;
+  opacity: 1;
+  visibility: visible;
+}

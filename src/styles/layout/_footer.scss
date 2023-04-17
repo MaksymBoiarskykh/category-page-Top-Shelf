@@ -1,0 +1,165 @@
+footer {
+  margin-top: 336px;
+  color: #9d9ea2;
+  background: linear-gradient(180deg, #1a1e26 0%, #01100b 100%);
+
+  .container {
+    padding: 390px 8.3% 0;
+  }
+}
+
+.main_footer {
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    font: 400 14px / calc(21 / 14) "Lexend", sans-serif;
+    color: #9d9ea2;
+  }
+
+  &__info {
+    .logo {
+      width: 173px;
+      margin-bottom: 24px;
+    }
+
+    .text {
+      @media (min-width: 992px) {
+        max-width: 276px;
+      }
+    }
+  }
+}
+
+.main_footer__navigation {
+  margin-top: 30px;
+  @media (min-width: 992px) {
+    margin: 0;
+    width: 56%;
+  }
+  .caption {
+    color: #fff;
+    margin-bottom: 24px;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px 32px;
+
+    li:hover {
+      background: #5a5959;
+    }
+
+    &--second {
+      display: block;
+
+      li {
+        padding: 8px 0;
+      }
+
+      @media (min-width: 576px) {
+        display: grid;
+        padding: 0;
+      }
+    }
+  }
+
+  .second_block {
+    margin: 40px 0;
+  }
+
+  .third_block {
+    .list {
+      @include disappearance();
+      transition: all 0.5s;
+
+      @media (min-width: 576px) {
+        @include appearance();
+      }
+    }
+
+    #opener_foot {
+      @include disappearance();
+
+      &:checked {
+        ~ .list {
+          @include appearance();
+        }
+
+        ~ .opener_foot .caption {
+          color: #d86250;
+        }
+      }
+
+      @media (min-width: 576px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.payment__list {
+  display: flex;
+  margin: 40px 0 64px;
+
+  li:not(:last-child) {
+    margin-right: 2.35%;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 32px;
+    background: #fff;
+    border-radius: 6px;
+
+    &:hover {
+      background: #e3fb8a;
+    }
+
+    img {
+      width: auto;
+    }
+  }
+}
+
+.footer_bottom {
+  border-top: 1px solid #46494f;
+  padding-top: 40px;
+  padding-bottom: 64px;
+  text-align: center;
+
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span {
+    display: block;
+  }
+
+  &__block {
+    @media (min-width: 576px) {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0 0;
+    }
+
+    span {
+      margin: 5px 0 0;
+    }
+
+    @media (min-width: 992px) {
+      margin: 0;
+
+      span {
+        margin: 0 0 0 32px;
+      }
+    }
+  }
+}

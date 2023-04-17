@@ -1,0 +1,33 @@
+.product_block {
+  .container {
+    padding: 24px 0 24px;
+  }
+
+  &__list {
+    li {
+      padding-top: 50px;
+    }
+
+    @media (min-width: 576px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 32px 32px;
+
+      li {
+        padding-top: 0;
+      }
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
